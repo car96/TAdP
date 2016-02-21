@@ -12,17 +12,20 @@ import java.util.Scanner;
  * @author carlos
  */
 public class Ejercicio9 {
-    static void main(String[] args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Ingresa los lados de un triángulo de la manera A B C:");
         
-        double a = sc.nextDouble();
-        double b = sc.nextDouble();
-        double c = sc.nextDouble();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
         
         double p = (a+b+c)/2;
-        double area = Math.pow((p*(p-a)*(p-b)*(p-c)) ,0.5);
+        //{System.out.println(p);
+        double asd = p*(p-a)*(p-b)*(p-c);
+        //System.out.println(asd);
+        double area = Math.sqrt(asd);
         
         System.out.println("El área del triángulo es: "+area);
         
